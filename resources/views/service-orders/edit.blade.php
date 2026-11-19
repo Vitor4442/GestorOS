@@ -1,0 +1,2 @@
+@extends('layouts.app', ['title' => 'Editar '.$serviceOrder->number])
+@section('content')<div class="mx-auto max-w-5xl space-y-7"><div><a href="{{ route('service-orders.show', $serviceOrder) }}" class="text-sm font-bold text-slate-400 hover:text-indigo-600">← Voltar para {{ $serviceOrder->number }}</a><h1 class="mt-4 text-3xl font-black tracking-tight">Editar ordem</h1><p class="mt-2 text-sm text-slate-500">Atualize as informações deste atendimento.</p></div>@include('service-orders._form')</div>@endsection

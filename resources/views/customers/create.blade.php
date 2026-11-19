@@ -1,0 +1,2 @@
+@extends('layouts.app', ['title' => 'Novo cliente'])
+@section('content')<div class="mx-auto max-w-3xl space-y-7"><div><a href="{{ route('customers.index') }}" class="text-sm font-bold text-slate-400 hover:text-indigo-600">← Voltar para clientes</a><h1 class="mt-4 text-3xl font-black tracking-tight">Novo cliente</h1><p class="mt-2 text-sm text-slate-500">Cadastre quem solicita os seus serviços.</p></div>@include('customers._form')</div>@endsection

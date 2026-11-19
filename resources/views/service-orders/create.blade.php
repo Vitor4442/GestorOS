@@ -1,0 +1,2 @@
+@extends('layouts.app', ['title' => 'Nova ordem de serviço'])
+@section('content')<div class="mx-auto max-w-5xl space-y-7"><div><a href="{{ route('service-orders.index') }}" class="text-sm font-bold text-slate-400 hover:text-indigo-600">← Voltar para ordens</a><h1 class="mt-4 text-3xl font-black tracking-tight">Nova ordem de serviço</h1><p class="mt-2 text-sm text-slate-500">Registre um novo atendimento e dê visibilidade para toda a equipe.</p></div>@include('service-orders._form')</div>@endsection
